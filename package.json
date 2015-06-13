@@ -1,0 +1,33 @@
+{
+  "name": "grunt-tidy-annotations",
+  "version": "0.0.1",
+  "description": "Easily format PHP Swagger annotations with correct spaces",
+  "repository": "eknowles/grunt-tidy-annotations",
+  "author": {
+    "name": "Edward Knowles",
+    "email": "mail@eknowles.com",
+    "url": "http://eknowles.com"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-nodeunit": "~0.3.0",
+    "grunt": "~0.4.2",
+    "jshint-stylish": "~0.1.5",
+    "load-grunt-tasks": "~0.3.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "annotation": "^0.1.0"
+  }
+}
