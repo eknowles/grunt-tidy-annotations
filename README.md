@@ -2,6 +2,8 @@
 
 > Easily format PHP Swagger annotations with correct spaces
 
+![](https://github.com/eknowles/grunt-tidy-annotations/blob/master/readme_example.gif)
+
 ## Getting Started
 This plugin requires Grunt.
 
