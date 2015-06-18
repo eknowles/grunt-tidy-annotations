@@ -37,6 +37,7 @@ module.exports = function (grunt) {
         options: {},
         files: {
           'tmp/': ['test/fixtures/**/*.php']
+          //'tmp/': ['test/fixtures/Controllers/Academy.php']
         }
       }
     },
