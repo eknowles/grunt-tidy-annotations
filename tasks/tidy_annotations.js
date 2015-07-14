@@ -100,7 +100,7 @@ module.exports = function (grunt) {
         var kvCheck = /(\s+)?([a-z]+?)=(("")?(".+?")?(false|true)?([0-9]+)?)(,)?/gim;
         console.log(itemObject);
         if (kvCheck.test(itemObject.body)) {
-          itemBody = itemObject.body.replace(kvCheck, indentString.repeat(indent) + '$2=$3$7\n');
+          itemBody = itemObject.body.replace(kvCheck, indentString.repeat(indent) + '$2=$3$8\n');
         } else {
           console.warn(itemObject);
           itemBody = itemObject.body.replace(/(\n"(.+)?"(\)?))/g, '\n"$2"$3');
