@@ -97,10 +97,10 @@ module.exports = function (grunt) {
         var itemHead = indentString.repeat(indent) + itemObject.head + '\n';
         indent += 1;
         var itemBody = '';
-        var kvCheck = /(\s+)?([a-z]+?)=(("")?(".+?")?(false|true)?([0-9]+)?)(,)?/gim;
+        var kvCheck = /(\s+)?([a-z]+?)=(({})?({[^}]+})?("")?(".+?")?(false|true)?([0-9]+)?)(,)?/gim;
         console.log(itemObject);
         if (kvCheck.test(itemObject.body)) {
-          itemBody = itemObject.body.replace(kvCheck, indentString.repeat(indent) + '$2=$3$8\n');
+          itemBody = itemObject.body.replace(kvCheck, indentString.repeat(indent) + '$2=$3$10\n');
         } else {
           console.warn(itemObject);
           itemBody = itemObject.body.replace(/(\n"(.+)?"(\)?))/g, '\n"$2"$3');
